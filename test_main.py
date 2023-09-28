@@ -29,4 +29,4 @@ def test_add_numbers():
 def test_invalid_input():
     # Test invalid input (non-numeric values)
     response = client.get("/add?num1=abc&num2=def")
-    assert response.status_code == 421  # Expect a validation error
+    assert response.status_code == 422  # Expect a validation error
